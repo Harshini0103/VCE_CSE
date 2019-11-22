@@ -1,0 +1,37 @@
+<h2 class="w3-center" style="text-align:center;">Announcements!!!</h2>
+<div style="padding-left:450px">
+<div class="w3-content" style="max-width:400px">
+  <div class="mySlides w3-container w3-red">
+    <h1><b>Must Read</b></h1>
+    <h1><i>7TH NATIONAL CONFERENCE ON ADVANCES IN MECHANICAL ENGINEERING (AIM-2019) - 27-Dec-2019 - 28-Dec-2019 - Organized by Department of Mechanical Engineering</i></h1>
+  </div>
+
+  <img class="mySlides" src="https://vce.ac.in/slides/Slide_08.jpg" style="width:100%">
+
+  <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+    <p><span class="w3-tag w3-yellow">New!</span>
+    <p>FACULTY DEVELOPMENT PROGRAMME (FDP) ON “TRENDS IN SOC DESIGN & ITS APPLICATIONS” ORGANISED BY DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING, VCE, IN ASSOCIATION WITH NIT, WARANGAL.</p>
+    <p> - 09-Dec-2019 - 14-Dec-2019 - Organized by Department of Electronics and Communications</p>
+  </div>
+
+  <img class="mySlides" src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+</div>
+</div>
+
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
+}
+</script>

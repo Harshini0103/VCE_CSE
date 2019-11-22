@@ -1,0 +1,90 @@
+<%- include('partials/header') %>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/hom">VCE-CSE</a>
+
+        </div>
+
+
+        <ul class="nav navbar-nav">
+            <li><a href="/announcement">Announcement</a></li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Time Table
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <ul>
+                        <li><a class="dropdown-item" href="/cseatwo">CSE-A 2/4</a></li>
+                        <li><a class="dropdown-item" href="/csebtwo">CSE-B 2/4</a></li>
+                        <li><a class="dropdown-item" href="/cseathree">CSE-A 3/4</a></li>
+                        <li><a class="dropdown-item" href="/csebthree">CSE-B 3/4</a></li>
+                    </ul>
+                </div>
+
+            </li>
+
+
+        </ul>
+
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/reg"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+<!--
+            <li><a></a></li>
+            <li routerLinkActive="active current" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/app-home">Home</a></li>-->
+
+
+<li class="dropdown" <a class="dropdown-toggle" data-toggle="dropdown" TimeTable<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li><a href="/cseatwo">CSE-A 2/4</a></li>
+        <li><a href="/csebtwo">CSE-B 2/4</a></li>
+        <li><a href="/cseathree">CSE-A 3/4</a></li>
+        <li><a href="/csebthree">CSE-B 3/4</a></li>
+    </ul>
+</li><br>
+<h2 class="w3-center" style="text-align:center">VASAVI COLLEGE OF ENGINEERING</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <div style="padding-left:50px">
+  <img class="mySlides" src="https://www.vce.ac.in/slides/Slide_07.jpeg" style="width:100%">
+  <img class="mySlides" src="https://www.vce.ac.in/slides/Slide_03.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.vce.ac.in/slides/Slide_05.jpg" style="width:100%">
+</div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<%- include('partials/footer') %>

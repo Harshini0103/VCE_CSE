@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<h2 class="w3-center" style="text-align:center">News</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <div style="padding-left:50px">
+  <img class="mySlides" src="https://www.vce.ac.in/slides/Slide_07.jpeg" style="width:100%">
+  <img class="mySlides" src="https://www.vce.ac.in/slides/Slide_03.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.vce.ac.in/slides/Slide_05.jpg" style="width:100%">
+</div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<%- include('partials/footer') %>
